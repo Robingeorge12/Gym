@@ -1,0 +1,26 @@
+.modal-container{
+    width:350px;
+    height: 400px;
+    /* margin: auto; */
+    margin-top: 150px;
+    margin-left: 400px;
+    }
+    .modal-div{
+        width: 100%;
+        height: 100%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        text-align: center;
+        color: black;
+        border-radius: 20px;
+    }
+    .modal-div>h3{
+        text-align: center;
+        color: black; 
+    }
+    .im-modal{
+width: 100%;
+height: 300px;
+border-radius: 10px 10px 0px 0px;
+
+    }
+    
