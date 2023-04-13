@@ -7,11 +7,15 @@ import Gallery from '../Gallery/Gallery'
 import Facility from '../Facilities/Facility'
 import Footer from '../Footer/Footer'
 import CoppyWrite from '../CoppyWrite/CoppyWrite'
-
+import { BiUser } from 'react-icons/bi';
 
 
 function Navbar() {
     const navigate = useNavigate()
+
+    const handleUserProfile = ()=>{
+        navigate("/user")
+    }
 
     const handleMove = () => {
         navigate("/workout")
@@ -19,6 +23,9 @@ function Navbar() {
 
     const handleProduct = ()=>{
         navigate("/plans")
+    }
+    const handleSign = ()=>{
+        navigate("/signup")
     }
 
     return (
@@ -34,7 +41,10 @@ function Navbar() {
                     <div>Contact</div>
                 </div>
 
-                <div className='log-botton'><button className='btn'>Login</button></div>
+                <div className='log-botton'><button className='btn' onClick={handleSign}>Login</button>
+                
+                </div>
+                <div className='user-profile' onClick={handleUserProfile} ><BiUser style={{backgroundColor:"", width:"40px", height:"40px", border:"1px solid aliceblue",borderRadius:"5px"}} /></div>
             </div>
         </div>
 
